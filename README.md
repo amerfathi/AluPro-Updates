@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ultra Frame Platform
 
 Production-grade full-stack website and operations platform for **Ultra Frame** (Metal Industries), built with **Next.js + TypeScript + Tailwind + Supabase**.
@@ -281,3 +282,7 @@ npx vercel --prod
 4. Advanced analytics dashboard and KPI reporting
 5. Automated scheduled reminders for upcoming milestones
 
+=======
+# AluPro-Updates
+تحديثات جديده
+>>>>>>> a20523f216e8c17aecc9b845b2368dcddd57283d
