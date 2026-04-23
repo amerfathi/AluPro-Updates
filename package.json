@@ -1,0 +1,47 @@
+{
+  "name": "ultra-frame",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "verify:supabase": "node scripts/verify-supabase.mjs",
+    "seed:supabase-live": "node scripts/supabase-seed-live.mjs",
+    "export:company-content": "node scripts/export-company-content.mjs",
+    "import:company-content": "node scripts/import-company-content.mjs",
+    "check:supabase-live": "node scripts/supabase-live-integration-check.mjs",
+    "setup:live-users": "node scripts/setup-live-users.mjs",
+    "setup:live-demo-project": "node scripts/setup-live-demo-project.mjs",
+    "check:workflow-live": "node scripts/run-live-workflow-check.mjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "@react-pdf/renderer": "^4.3.1",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.551.0",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.65.0",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+

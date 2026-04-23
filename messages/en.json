@@ -1,0 +1,97 @@
+{
+  "common": {
+    "brand": "Ultra Frame",
+    "subtitle": "Precision Metal & Glass Solutions",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "back": "Back",
+    "loading": "Loading...",
+    "status": "Status",
+    "switchToArabic": "Switch to Arabic",
+    "switchToEnglish": "Switch to English"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "technicalLibrary": "Technical Library",
+    "quote": "Quote Request",
+    "fieldVisit": "Field Visit",
+    "maintenance": "Maintenance Request",
+    "contact": "Contact",
+    "portal": "Client Portal",
+    "admin": "Admin",
+    "login": "Login"
+  },
+  "hero": {
+    "headline": "Premium Aluminum, Steel, and Glass Execution with Engineering Precision",
+    "description": "We translate technical detail into controlled delivery with real-time client visibility through Ultra-Track.",
+    "quoteCta": "Request a Quote",
+    "visitCta": "Book a Site Visit",
+    "trackCta": "Track Your Project",
+    "projectsCta": "View Projects"
+  },
+  "home": {
+    "trustTitle": "Why consultants and owners choose Ultra Frame",
+    "trustDescription": "We combine factory discipline, transparent communication, and expert site execution into one accountable delivery model.",
+    "servicesTitle": "Core Services",
+    "showcaseTitle": "Featured Executions",
+    "trackTitle": "Ultra-Track",
+    "trackDescription": "A secure client workspace showing every milestone from documentation to handover with timelines and files.",
+    "technicalTitle": "Technical Capability",
+    "processTitle": "How We Deliver",
+    "leadTitle": "Start with a team that controls the details"
+  },
+  "about": {
+    "title": "About Us",
+    "story": "Ultra Frame is a metal industries company focused on aluminum systems, blacksmithing, and advanced glass works across residential, commercial, and industrial projects.",
+    "mission": "Deliver engineering-grade execution with stable quality and controlled timelines.",
+    "vision": "Become the regional benchmark for high-performance metal and facade works.",
+    "difference": "Our difference is disciplined manufacturing paired with transparent digital tracking at every stage."
+  },
+  "forms": {
+    "name": "Full Name",
+    "phone": "Phone",
+    "email": "Email",
+    "city": "City",
+    "notes": "Notes",
+    "serviceType": "Service Type",
+    "projectType": "Project Type",
+    "preferredContact": "Preferred Contact Method",
+    "attachments": "Attachments",
+    "success": "Request submitted successfully. Our team will contact you shortly.",
+    "error": "Unable to submit at the moment. Please try again later."
+  },
+  "portal": {
+    "title": "Ultra-Track Portal",
+    "welcome": "Welcome to your project tracking workspace",
+    "projects": "Projects",
+    "documents": "Documents",
+    "schedule": "Schedule",
+    "warranty": "Warranty",
+    "maintenance": "Maintenance",
+    "profile": "Profile"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "leads": "Leads",
+    "quotes": "Quotes",
+    "projects": "Projects",
+    "clients": "Clients",
+    "portfolio": "Portfolio CMS",
+    "technicalLibrary": "Technical Library CMS",
+    "maintenance": "Maintenance Tickets",
+    "settings": "Settings",
+    "estimator": "Estimator"
+  },
+  "footer": {
+    "tagline": "Professional metal execution with engineering-grade control",
+    "rights": "All rights reserved to Ultra Frame"
+  }
+}
+
+

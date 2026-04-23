@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080d16;
+  --surface-card: #101926;
+  --surface-soft: #152236;
+  --surface-soft-hover: #1a2a43;
+  --border-soft: #24354c;
+  --border-strong: #36516f;
+  --brand-primary: #0b66ff;
+  --brand-primary-strong: #0a54d4;
+  --brand-primary-muted: color-mix(in oklab, #0b66ff 16%, #0f172a);
+  --text-primary: #f8fafc;
+  --text-secondary: #c0cedd;
+  --text-muted: #8ea1b8;
+  --success: #3ebf9f;
+  --warning: #f6b756;
+  --danger: #f97070;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-cairo), var(--font-inter), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.02em;
+}
+
+* {
+  border-color: var(--border-soft);
+}
+
+

@@ -1,0 +1,64 @@
+﻿{
+  "siteSettings": {
+    "general": {
+      "brand": "Ultra Frame",
+      "defaultLanguage": "ar",
+      "secondaryLanguage": "en",
+      "taglineAr": "الترا فريم",
+      "taglineEn": "ultra frame"
+    },
+    "contact": {
+      "city": "ALRASS",
+      "country": "Saudi Arabia",
+      "addressAr": "المملكه العربيه السعوديه الرس",
+      "addressEn": "SAUDIA ARABIA ALRASS",
+      "phone": "+966538881558",
+      "whatsapp": "+966538881558",
+      "email": "ultraframeco@gmail.com",
+      "workingHoursAr": "السبت - الخميس، 7:00 ص - 6:00 م",
+      "workingHoursEn": "Sun - Thu, 7:00 AM - 6:00 PM",
+      "mapLabelAr": "موقع الشركة على الخريطة",
+      "mapLabelEn": "Company location on map"
+    }
+  },
+  "portfolioProjects": [
+    {
+      "slug": "example-commercial-project-riyadh",
+      "titleAr": "عنوان المشروع بالعربية",
+      "titleEn": "Project title in English",
+      "category": "Commercial",
+      "summaryAr": "وصف مختصر للمشروع بالعربية.",
+      "summaryEn": "Short project summary in English.",
+      "location": "Riyadh",
+      "completionYear": 2026,
+      "featured": true,
+      "published": true,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+          "altAr": "وصف الصورة بالعربية",
+          "altEn": "Image description in English",
+          "sortOrder": 1,
+          "isBefore": false,
+          "isAfter": false
+        }
+      ]
+    }
+  ],
+  "technicalLibraryEntries": [
+    {
+      "entryType": "profiles",
+      "slug": "example-profile-system",
+      "titleAr": "اسم النظام بالعربية",
+      "titleEn": "System name in English",
+      "summaryAr": "وصف مختصر بالعربية",
+      "summaryEn": "Short summary in English",
+      "specs": {
+        "Depth": "90 mm",
+        "Glazing": "28-52 mm"
+      },
+      "downloadFilePath": null,
+      "published": true
+    }
+  ]
+}
