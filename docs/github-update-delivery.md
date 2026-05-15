@@ -45,6 +45,8 @@
 
 ## ربط التطوير اليومي مع GitHub
 
+تم ربط هذا المشروع على الفرع: `aluapp-source` داخل الريبو `amerfathi/AluPro-Updates`.
+
 لجعل أي تعديل في المشروع يذهب إلى GitHub مباشرة، لازم المشروع يكون مربوط بمستودع Git (local + remote) ثم:
 
 ```powershell
@@ -58,4 +60,3 @@ git push
 ```powershell
 npm run release:win:github
 ```
-
