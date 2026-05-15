@@ -1,0 +1,9 @@
+node_modules
+dist
+out
+.DS_Store
+.eslintcache
+*.log*
+ios/App/build
+ios/App/App/public
+DerivedData

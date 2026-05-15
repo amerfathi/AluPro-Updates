@@ -1,0 +1,4 @@
+publish:
+  provider: github
+  owner: amerfathi
+  repo: AluPro-Updates

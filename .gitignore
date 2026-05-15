@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-license-admin
+out
+.DS_Store
+.eslintcache
+*.log*
+.license-keys*/
+scripts/licensing/admin-store.json

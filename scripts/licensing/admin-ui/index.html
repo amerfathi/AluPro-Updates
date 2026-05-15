@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALUAPP License Admin</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">AL</div>
+          <div>
+            <h1>مدير التراخيص</h1>
+            <p>ALUAPP Offline</p>
+          </div>
+        </div>
+
+        <button class="nav-btn active" data-scroll="overview">نظرة عامة</button>
+        <button class="nav-btn" data-scroll="settings">الإعدادات</button>
+        <button class="nav-btn" data-scroll="customers">العملاء</button>
+        <button class="nav-btn" data-scroll="licenses">التراخيص</button>
+
+        <div class="sidebar-foot">
+          <p>بدون سيرفر خارجي</p>
+          <code id="storePathLabel">...</code>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="topbar" id="overview">
+          <div>
+            <h2>لوحة إدارة الاشتراكات</h2>
+            <p>إصدار وإدارة ومتابعة تراخيص العملاء في مكان واحد.</p>
+          </div>
+          <button id="refreshBtn" class="ghost-btn">تحديث</button>
+        </header>
+
+        <section class="stats-grid">
+          <article class="stat-card">
+            <span>إجمالي العملاء</span>
+            <strong id="totalCustomers">0</strong>
+          </article>
+          <article class="stat-card">
+            <span>تراخيص نشطة</span>
+            <strong id="activeLicenses">0</strong>
+          </article>
+          <article class="stat-card">
+            <span>تراخيص منتهية</span>
+            <strong id="expiredLicenses">0</strong>
+          </article>
+          <article class="stat-card">
+            <span>آخر إصدار</span>
+            <strong id="latestIssue">-</strong>
+          </article>
+        </section>
+
+        <section class="card" id="settings">
+          <h3>إعدادات التوقيع</h3>
+          <form id="settingsForm" class="grid-form">
+            <label>
+              مسار المفتاح الخاص (Private Key)
+              <input type="text" id="privateKeyPath" placeholder="C:\secure\keys\private-key.pem" />
+            </label>
+            <label>
+              الخطة الافتراضية
+              <input type="text" id="defaultPlan" placeholder="pro" />
+            </label>
+            <div>
+              <div class="label-title">المزايا الافتراضية</div>
+              <div id="defaultFeaturesPicker" class="feature-picker"></div>
+            </div>
+            <button type="submit" class="primary-btn">حفظ الإعدادات</button>
+          </form>
+        </section>
+
+        <section class="card split" id="customers">
+          <div>
+            <h3>العملاء</h3>
+            <form id="customerForm" class="grid-form">
+              <label>
+                اسم العميل
+                <input type="text" id="customerName" required />
+              </label>
+              <label>
+                الجوال
+                <input type="text" id="customerPhone" />
+              </label>
+              <label>
+                البريد الإلكتروني
+                <input type="text" id="customerEmail" />
+              </label>
+              <label>
+                ملاحظات
+                <input type="text" id="customerNotes" />
+              </label>
+              <button type="submit" class="primary-btn">إضافة عميل</button>
+            </form>
+          </div>
+          <div class="list-pane">
+            <h4>قائمة العملاء</h4>
+            <ul id="customersList"></ul>
+          </div>
+        </section>
+
+        <section class="card split" id="licenses">
+          <div>
+            <h3>إصدار ترخيص جديد</h3>
+            <form id="licenseForm" class="grid-form">
+              <label>
+                العميل
+                <select id="licenseCustomerId" required></select>
+              </label>
+              <label>
+                HWID الجهاز
+                <input type="text" id="licenseHwid" placeholder="PC-XXXXXXXXXXXX" required />
+              </label>
+              <label>
+                تاريخ الانتهاء
+                <input type="date" id="licenseExpiryDate" required />
+              </label>
+              <label>
+                خطة الترخيص
+                <input type="text" id="licensePlan" placeholder="pro" />
+              </label>
+              <div>
+                <div class="label-title">مزايا الترخيص</div>
+                <div id="licenseFeaturesPicker" class="feature-picker"></div>
+              </div>
+              <label>
+                ملاحظات
+                <input type="text" id="licenseNotes" />
+              </label>
+              <button type="submit" class="primary-btn">إصدار كود التفعيل</button>
+            </form>
+            <div id="generatedTokenBox" class="token-box hidden">
+              <div>
+                <strong>تم إصدار الكود</strong>
+                <p>انسخ الكود وأرسله للعميل.</p>
+              </div>
+              <textarea id="generatedToken" readonly></textarea>
+              <button id="copyTokenBtn" class="ghost-btn">نسخ الكود</button>
+            </div>
+          </div>
+          <div class="list-pane">
+            <h4>التراخيص المصدّرة</h4>
+            <div id="licensesTableWrap" class="table-wrap"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

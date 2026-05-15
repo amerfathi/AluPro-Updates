@@ -1,0 +1,28 @@
+appId: com.alumanager.licenseadmin
+productName: AluPro License Admin
+asar: true
+
+directories:
+  output: dist-license-admin
+
+files:
+  - scripts/licensing/**/*
+  - resources/icon.ico
+  - package.json
+
+extraMetadata:
+  main: scripts/licensing/admin-desktop/main.cjs
+
+publish: []
+
+win:
+  icon: resources/icon.ico
+  target:
+    - nsis
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  shortcutName: AluPro License Admin
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

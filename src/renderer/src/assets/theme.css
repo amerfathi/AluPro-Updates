@@ -1,0 +1,319 @@
+:root {
+  --alu-bg: #f1f3f8;
+  --alu-bg-soft: #f7f9fd;
+  --alu-surface: rgba(255, 255, 255, 0.86);
+  --alu-surface-strong: #ffffff;
+  --alu-border: #d6dce8;
+  --alu-border-strong: #c5cfdf;
+  --alu-text: #1f232c;
+  --alu-text-soft: #606d82;
+  --alu-brand: #0f1729;
+  --alu-brand-strong: #0a1020;
+  --alu-brand-soft: #e9eef7;
+  --alu-accent: #2563eb;
+  --alu-accent-soft: #e8f0ff;
+  --alu-success: #16a34a;
+  --alu-success-soft: #eaf8ee;
+  --alu-danger: #dc2626;
+  --alu-danger-soft: #ffeceb;
+  --alu-shadow-lg: 0 22px 48px rgba(15, 23, 41, 0.1);
+  --alu-shadow-md: 0 10px 26px rgba(17, 24, 39, 0.08);
+  --alu-radius-xl: 1.25rem;
+  --alu-radius-lg: 1rem;
+  --alu-radius-md: 0.75rem;
+  --alu-density-scale: 0.92;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.07), transparent 26%),
+    radial-gradient(circle at 85% 85%, rgba(15, 23, 41, 0.06), transparent 28%),
+    linear-gradient(180deg, #f8f9fc 0%, #eff3f9 100%);
+  color: var(--alu-text);
+  font-family:
+    'Segoe UI Variable Text',
+    'Segoe UI',
+    'Noto Sans Arabic',
+    'Noto Kufi Arabic',
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.alu-app-shell {
+  position: relative;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.04), transparent 24%),
+    linear-gradient(180deg, #f7f9fd 0%, #f1f4fa 100%);
+}
+
+.alu-panel {
+  background: var(--alu-surface);
+  border: 1px solid var(--alu-border);
+  box-shadow: var(--alu-shadow-md);
+  backdrop-filter: blur(16px);
+}
+
+.alu-panel-strong {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(250, 252, 255, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  box-shadow: var(--alu-shadow-lg);
+  backdrop-filter: blur(16px);
+}
+
+.alu-sidebar {
+  background:
+    radial-gradient(circle at top, rgba(96, 165, 250, 0.18), transparent 30%),
+    linear-gradient(180deg, #0b1324 0%, #101a31 58%, #111f3b 100%);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 20px 46px rgba(3, 8, 20, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.alu-top-gradient {
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.11), transparent 25%),
+    linear-gradient(180deg, #ffffff 0%, #f6f8fd 100%);
+}
+
+.alu-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.alu-toolbar {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(214, 220, 232, 0.9);
+  box-shadow: 0 12px 28px rgba(15, 23, 41, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.alu-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.72rem;
+  border: 1px solid #dde3ef;
+  background: #ffffff;
+  color: var(--alu-text-soft);
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    color 140ms ease,
+    border-color 140ms ease;
+}
+
+.alu-icon-button:hover {
+  transform: translateY(-1px);
+  color: var(--alu-accent);
+  border-color: rgba(37, 99, 235, 0.28);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.16);
+}
+
+.alu-workspace {
+  color: var(--alu-text);
+  font-size: calc(0.9rem * var(--alu-density-scale));
+  line-height: 1.4;
+}
+
+.alu-workspace h1,
+.alu-workspace h2,
+.alu-workspace h3,
+.alu-workspace h4 {
+  color: var(--alu-text);
+  letter-spacing: -0.01em;
+}
+
+.alu-workspace h1 {
+  font-size: calc(1.62rem * var(--alu-density-scale));
+}
+
+.alu-workspace h2 {
+  font-size: calc(1.3rem * var(--alu-density-scale));
+}
+
+.alu-workspace h3 {
+  font-size: calc(1.02rem * var(--alu-density-scale));
+}
+
+.alu-workspace h4 {
+  font-size: calc(0.95rem * var(--alu-density-scale));
+}
+
+.alu-workspace label,
+.alu-workspace th,
+.alu-workspace .text-gray-500,
+.alu-workspace .text-gray-400 {
+  color: #5d6a7f !important;
+}
+
+.alu-workspace label,
+.alu-workspace th,
+.alu-workspace .text-gray-500 {
+  font-weight: 700;
+}
+
+.alu-workspace .text-gray-400 {
+  font-weight: 600;
+}
+
+.alu-workspace
+  input:not([type='checkbox']):not([type='radio']):not([type='file']):not([type='image']),
+.alu-workspace select,
+.alu-workspace textarea {
+  min-height: 2.15rem;
+  border: 1px solid #d9e0ec !important;
+  border-radius: 0.72rem !important;
+  background: #f8fafe !important;
+  color: var(--alu-text) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  line-height: 1.35;
+  font-size: 0.82rem;
+}
+
+.alu-workspace
+  input:not([type='checkbox']):not([type='radio']):not([type='file']):not(
+    [type='image']
+  )::placeholder,
+.alu-workspace textarea::placeholder {
+  color: #8b96aa;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.alu-workspace
+  input:not([type='checkbox']):not([type='radio']):not([type='file']):not([type='image']):focus,
+.alu-workspace select:focus,
+.alu-workspace textarea:focus {
+  outline: none;
+  border-color: rgba(37, 99, 235, 0.42) !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12) !important;
+}
+
+.alu-workspace table {
+  color: var(--alu-text);
+  font-size: 0.8rem;
+}
+
+.alu-workspace td {
+  color: var(--alu-text);
+}
+
+.alu-workspace th,
+.alu-workspace td {
+  padding-top: 0.52rem !important;
+  padding-bottom: 0.52rem !important;
+}
+
+.alu-workspace button {
+  font-size: 0.8rem;
+  line-height: 1.28;
+}
+
+.alu-workspace button svg {
+  width: 0.88rem;
+  height: 0.88rem;
+}
+
+.alu-workspace .text-4xl {
+  font-size: 1.85rem !important;
+}
+
+.alu-workspace .text-3xl {
+  font-size: 1.45rem !important;
+}
+
+.alu-workspace .text-2xl {
+  font-size: 1.2rem !important;
+}
+
+.alu-workspace .text-xl {
+  font-size: 1.03rem !important;
+}
+
+.alu-workspace .bg-white {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+}
+
+.alu-workspace .bg-gray-50 {
+  background-color: #f6f8fc !important;
+}
+
+.alu-workspace .bg-gray-100 {
+  background-color: #eef2f8 !important;
+}
+
+.alu-workspace .bg-blue-50 {
+  background-color: #e9f0ff !important;
+}
+
+.alu-workspace .bg-green-50 {
+  background-color: #eaf8ee !important;
+}
+
+.alu-workspace .bg-red-50 {
+  background-color: #ffeceb !important;
+}
+
+.alu-workspace .bg-indigo-50 {
+  background-color: #edf2ff !important;
+}
+
+.alu-workspace .text-blue-700 {
+  color: #2563eb !important;
+}
+
+.alu-workspace .text-green-700 {
+  color: #15803d !important;
+}
+
+.alu-workspace .text-indigo-600 {
+  color: #4f46e5 !important;
+}
+
+.alu-workspace .text-red-600,
+.alu-workspace .text-red-500,
+.alu-workspace .text-red-400 {
+  color: #dc2626 !important;
+}
+
+.alu-workspace .border-gray-200,
+.alu-workspace .border-indigo-100,
+.alu-workspace .border-blue-200 {
+  border-color: #d8dfeb !important;
+}
+
+.alu-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.alu-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.alu-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(123, 135, 158, 0.34);
+  border-radius: 999px;
+}
+
+.alu-sidebar .alu-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.alu-sidebar .alu-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.22);
+}

@@ -1,0 +1,268 @@
+:root {
+  --alu-bg: #f4f7fe;
+  --alu-bg-soft: #fafbff;
+  --alu-surface: rgba(255, 255, 255, 0.96);
+  --alu-surface-strong: #ffffff;
+  --alu-border: rgba(139, 149, 183, 0.16);
+  --alu-text: #1f2544;
+  --alu-text-soft: #8a93ad;
+  --alu-brand: #171f33;
+  --alu-brand-strong: #0f172c;
+  --alu-brand-soft: #edf0ff;
+  --alu-accent: #5568ff;
+  --alu-accent-soft: #eef1ff;
+  --alu-success: #60d1c3;
+  --alu-success-soft: #ebfbf8;
+  --alu-danger: #ff8dad;
+  --alu-danger-soft: #fff1f6;
+  --alu-shadow-lg: 0 28px 60px rgba(30, 39, 71, 0.1);
+  --alu-shadow-md: 0 16px 36px rgba(31, 38, 72, 0.08);
+  --alu-radius-xl: 2rem;
+  --alu-radius-lg: 1.5rem;
+  --alu-radius-md: 1.1rem;
+  --alu-safe-top: env(safe-area-inset-top, 0px);
+  --alu-safe-right: env(safe-area-inset-right, 0px);
+  --alu-safe-bottom: env(safe-area-inset-bottom, 0px);
+  --alu-safe-left: env(safe-area-inset-left, 0px);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(85, 104, 255, 0.1), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(96, 209, 195, 0.08), transparent 26%),
+    linear-gradient(180deg, #f8faff 0%, #f1f4fb 100%);
+  color: var(--alu-text);
+  font-family: 'Segoe UI', Tahoma, 'Noto Sans Arabic', 'Noto Kufi Arabic', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+
+.alu-app-shell {
+  position: relative;
+  background:
+    radial-gradient(circle at top left, rgba(85, 104, 255, 0.06), transparent 22%),
+    radial-gradient(circle at 85% 80%, rgba(96, 209, 195, 0.07), transparent 24%),
+    linear-gradient(180deg, #f8faff 0%, #f2f5fc 100%);
+  padding-right: var(--alu-safe-right);
+  padding-left: var(--alu-safe-left);
+}
+
+.alu-panel {
+  background: var(--alu-surface);
+  border: 1px solid var(--alu-border);
+  box-shadow: var(--alu-shadow-md);
+  backdrop-filter: blur(18px);
+}
+
+.alu-panel-strong {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 250, 255, 0.95));
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: var(--alu-shadow-lg);
+}
+
+.alu-sidebar {
+  background:
+    radial-gradient(circle at top, rgba(85, 104, 255, 0.18), transparent 28%),
+    linear-gradient(180deg, #0f1629 0%, #131c32 38%, #1a2443 100%);
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 24px 58px rgba(11, 17, 34, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.alu-top-gradient {
+  background:
+    radial-gradient(circle at top left, rgba(85, 104, 255, 0.14), transparent 26%),
+    linear-gradient(180deg, #ffffff 0%, #f7f8ff 100%);
+}
+
+.alu-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.alu-toolbar {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(225, 230, 246, 0.9);
+  box-shadow: 0 18px 44px rgba(33, 42, 77, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.alu-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(226, 231, 245, 0.95);
+  background: #ffffff;
+  color: var(--alu-text-soft);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.alu-icon-button:hover {
+  transform: translateY(-1px);
+  color: var(--alu-accent);
+  border-color: rgba(85, 104, 255, 0.18);
+  box-shadow: 0 10px 24px rgba(85, 104, 255, 0.12);
+}
+
+.alu-workspace {
+  color: var(--alu-text);
+}
+
+.alu-workspace h1,
+.alu-workspace h2,
+.alu-workspace h3,
+.alu-workspace h4 {
+  color: var(--alu-text);
+  letter-spacing: -0.01em;
+}
+
+.alu-workspace label,
+.alu-workspace th,
+.alu-workspace .text-gray-500,
+.alu-workspace .text-gray-400 {
+  color: #76819b !important;
+}
+
+.alu-workspace label,
+.alu-workspace th,
+.alu-workspace .text-gray-500 {
+  font-weight: 700;
+}
+
+.alu-workspace .text-gray-400 {
+  font-weight: 600;
+}
+
+.alu-workspace
+  input:not([type='checkbox']):not([type='radio']):not([type='file']):not([type='image']),
+.alu-workspace select,
+.alu-workspace textarea {
+  min-height: 2.85rem;
+  border: 1px solid rgba(224, 229, 244, 0.95) !important;
+  border-radius: 1rem !important;
+  background: #f7f9ff !important;
+  color: var(--alu-text) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.alu-workspace
+  input:not([type='checkbox']):not([type='radio']):not([type='file']):not(
+    [type='image']
+  )::placeholder,
+.alu-workspace textarea::placeholder {
+  color: #9ca7bf;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.alu-workspace
+  input:not([type='checkbox']):not([type='radio']):not([type='file']):not([type='image']):focus,
+.alu-workspace select:focus,
+.alu-workspace textarea:focus {
+  outline: none;
+  border-color: rgba(85, 104, 255, 0.34) !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 0 4px rgba(85, 104, 255, 0.12) !important;
+}
+
+.alu-workspace table {
+  color: var(--alu-text);
+}
+
+.alu-workspace td {
+  color: var(--alu-text);
+}
+
+.alu-workspace .bg-white {
+  background-color: rgba(255, 255, 255, 0.97) !important;
+}
+
+.alu-workspace .bg-gray-50 {
+  background-color: #f7f9ff !important;
+}
+
+.alu-workspace .bg-gray-100 {
+  background-color: #eef2fb !important;
+}
+
+.alu-workspace .bg-blue-50 {
+  background-color: #eef1ff !important;
+}
+
+.alu-workspace .bg-green-50 {
+  background-color: #ebfbf8 !important;
+}
+
+.alu-workspace .bg-red-50 {
+  background-color: #fff1f6 !important;
+}
+
+.alu-workspace .bg-indigo-50 {
+  background-color: #f2f4ff !important;
+}
+
+.alu-workspace .text-blue-700 {
+  color: #5568ff !important;
+}
+
+.alu-workspace .text-green-700 {
+  color: #28b7a7 !important;
+}
+
+.alu-workspace .text-indigo-600 {
+  color: #6c5ce7 !important;
+}
+
+.alu-workspace .text-red-600,
+.alu-workspace .text-red-500,
+.alu-workspace .text-red-400 {
+  color: #ff7e9f !important;
+}
+
+.alu-workspace .border-gray-200,
+.alu-workspace .border-indigo-100,
+.alu-workspace .border-blue-200 {
+  border-color: rgba(225, 230, 246, 0.95) !important;
+}
+
+.alu-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.alu-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.alu-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(128, 139, 173, 0.35);
+  border-radius: 999px;
+}
+
+.alu-sidebar .alu-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.alu-sidebar .alu-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+}

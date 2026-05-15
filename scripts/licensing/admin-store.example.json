@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "privateKeyPath": "C:\\secure\\alu-license-keys\\private-key.pem",
+    "defaultPlan": "pro",
+    "defaultFeatures": [
+      "dashboard",
+      "contracts",
+      "quotation",
+      "production",
+      "reports",
+      "glass",
+      "inventory",
+      "procurement",
+      "archive",
+      "technical_catalog",
+      "admin_settings"
+    ]
+  },
+  "customers": [],
+  "licenses": []
+}

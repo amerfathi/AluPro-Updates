@@ -1,0 +1,9 @@
+{
+  "appId": "com.alupro.mobile",
+  "appName": "AluPro Mobile",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "iosScheme": "https"
+  }
+}
